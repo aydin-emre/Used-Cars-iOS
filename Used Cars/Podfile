@@ -8,6 +8,8 @@ target 'Used Cars' do
   # Pods for Used Cars
   pod 'Alamofire'
   pod 'EAAlert'
-  pod 'SDWebImage'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Kingfisher', '~> 7.0'
 
 end

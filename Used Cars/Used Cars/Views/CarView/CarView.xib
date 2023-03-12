@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarView" customModule="Used_Cars" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="ndC-Af-T0U"/>
+                <outlet property="imageCountContainerView" destination="uCD-1M-pPo" id="NZl-qQ-Ve0"/>
+                <outlet property="imageCountLabel" destination="yem-5N-hv3" id="3HI-uZ-Nwe"/>
+                <outlet property="imagePageControl" destination="hVQ-vs-A74" id="2pc-EY-Oge"/>
+                <outlet property="imageScrollView" destination="op6-WF-mtK" id="GO4-Na-xyw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="263"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d87-Ob-W5N">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="223"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="op6-WF-mtK">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="223"/>
+                        </scrollView>
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCD-1M-pPo">
+                            <rect key="frame" x="322" y="16" width="55" height="26"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23/28" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yem-5N-hv3" userLabel="3 kişi için 4 gece toplam">
+                                    <rect key="frame" x="12" y="0.0" width="31" height="26"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="NormalText"/>
+                            <constraints>
+                                <constraint firstItem="yem-5N-hv3" firstAttribute="leading" secondItem="uCD-1M-pPo" secondAttribute="leading" constant="12" id="1Oc-2U-9sN"/>
+                                <constraint firstAttribute="height" constant="26" id="SPZ-8V-qy8"/>
+                                <constraint firstAttribute="bottom" secondItem="yem-5N-hv3" secondAttribute="bottom" id="fNI-cK-NvP"/>
+                                <constraint firstItem="yem-5N-hv3" firstAttribute="top" secondItem="uCD-1M-pPo" secondAttribute="top" id="z1B-wA-9xd"/>
+                                <constraint firstAttribute="trailing" secondItem="yem-5N-hv3" secondAttribute="trailing" constant="12" id="zVt-0Q-oJJ"/>
+                            </constraints>
+                        </view>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="hVQ-vs-A74">
+                            <rect key="frame" x="147.33333333333334" y="189" width="98.333333333333343" height="26"/>
+                            <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </pageControl>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="Utb-I4-FIn"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uCD-1M-pPo" firstAttribute="top" secondItem="d87-Ob-W5N" secondAttribute="top" constant="16" id="BgR-4V-lB7"/>
+                        <constraint firstItem="op6-WF-mtK" firstAttribute="top" secondItem="d87-Ob-W5N" secondAttribute="top" id="Drg-au-hMQ"/>
+                        <constraint firstAttribute="trailing" secondItem="op6-WF-mtK" secondAttribute="trailing" id="HCJ-yJ-F5C"/>
+                        <constraint firstAttribute="height" constant="223" id="IUd-Ip-wBv" userLabel="height = 223"/>
+                        <constraint firstItem="hVQ-vs-A74" firstAttribute="centerX" secondItem="d87-Ob-W5N" secondAttribute="centerX" id="Ipx-rO-BOQ"/>
+                        <constraint firstAttribute="bottom" secondItem="hVQ-vs-A74" secondAttribute="bottom" constant="8" id="NWm-af-wBr"/>
+                        <constraint firstItem="op6-WF-mtK" firstAttribute="leading" secondItem="d87-Ob-W5N" secondAttribute="leading" id="O5l-b2-hVm"/>
+                        <constraint firstAttribute="trailing" secondItem="uCD-1M-pPo" secondAttribute="trailing" constant="16" id="ngC-RX-q70"/>
+                        <constraint firstAttribute="bottom" secondItem="op6-WF-mtK" secondAttribute="bottom" id="pQl-eO-DKM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="d87-Ob-W5N" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JpU-1o-UXA"/>
+                <constraint firstItem="d87-Ob-W5N" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="V3B-TG-u8V"/>
+                <constraint firstItem="d87-Ob-W5N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xvy-0V-mSF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-4" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="NormalText">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
