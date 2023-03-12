@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4819174C56F36CDFCC9B5FA2 /* Pods_Used_Cars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEE3C44C730C550AAD544FF /* Pods_Used_Cars.framework */; };
 		C338097429BE07A900BEC99C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338097329BE07A900BEC99C /* AppDelegate.swift */; };
 		C338097629BE07A900BEC99C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338097529BE07A900BEC99C /* SceneDelegate.swift */; };
 		C338097829BE07A900BEC99C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338097729BE07A900BEC99C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		619EBE30EBEF11AFC94C83CB /* Pods-Used Cars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Used Cars.debug.xcconfig"; path = "Target Support Files/Pods-Used Cars/Pods-Used Cars.debug.xcconfig"; sourceTree = "<group>"; };
 		C338097029BE07A900BEC99C /* Used Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Used Cars.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C338097329BE07A900BEC99C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C338097529BE07A900BEC99C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		C338097C29BE07AB00BEC99C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C338097F29BE07AB00BEC99C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C338098129BE07AB00BEC99C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEEE3C44C730C550AAD544FF /* Pods_Used_Cars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Used_Cars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F1035F1306C5D8B9D949D0 /* Pods-Used Cars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Used Cars.release.xcconfig"; path = "Target Support Files/Pods-Used Cars/Pods-Used Cars.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4819174C56F36CDFCC9B5FA2 /* Pods_Used_Cars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09F0ACC87BE496155A4DA961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE3C44C730C550AAD544FF /* Pods_Used_Cars.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		484821862FC3E9BDD1CBBCAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				619EBE30EBEF11AFC94C83CB /* Pods-Used Cars.debug.xcconfig */,
+				D2F1035F1306C5D8B9D949D0 /* Pods-Used Cars.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C338096729BE07A900BEC99C = {
 			isa = PBXGroup;
 			children = (
 				C338097229BE07A900BEC99C /* Used Cars */,
 				C338097129BE07A900BEC99C /* Products */,
+				484821862FC3E9BDD1CBBCAE /* Pods */,
+				09F0ACC87BE496155A4DA961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +81,47 @@
 		C338097229BE07A900BEC99C /* Used Cars */ = {
 			isa = PBXGroup;
 			children = (
-				C338097329BE07A900BEC99C /* AppDelegate.swift */,
-				C338097529BE07A900BEC99C /* SceneDelegate.swift */,
-				C338097729BE07A900BEC99C /* ViewController.swift */,
-				C338097929BE07A900BEC99C /* Main.storyboard */,
-				C338097C29BE07AB00BEC99C /* Assets.xcassets */,
-				C338097E29BE07AB00BEC99C /* LaunchScreen.storyboard */,
-				C338098129BE07AB00BEC99C /* Info.plist */,
+				C338098929BE08AD00BEC99C /* Delegates */,
+				C338098729BE089200BEC99C /* ViewControllers */,
+				C338098A29BE08CC00BEC99C /* Storyboards */,
+				C338098829BE08A200BEC99C /* Resources */,
 			);
 			path = "Used Cars";
+			sourceTree = "<group>";
+		};
+		C338098729BE089200BEC99C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C338097729BE07A900BEC99C /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C338098829BE08A200BEC99C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C338097C29BE07AB00BEC99C /* Assets.xcassets */,
+				C338098129BE07AB00BEC99C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C338098929BE08AD00BEC99C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C338097329BE07A900BEC99C /* AppDelegate.swift */,
+				C338097529BE07A900BEC99C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C338098A29BE08CC00BEC99C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C338097929BE07A900BEC99C /* Main.storyboard */,
+				C338097E29BE07AB00BEC99C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C338098429BE07AB00BEC99C /* Build configuration list for PBXNativeTarget "Used Cars" */;
 			buildPhases = (
+				142625A32284F85B53B20A8F /* [CP] Check Pods Manifest.lock */,
 				C338096C29BE07A900BEC99C /* Sources */,
 				C338096D29BE07A900BEC99C /* Frameworks */,
 				C338096E29BE07A900BEC99C /* Resources */,
+				5094A5B3AD6F41E7F1D155BC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +191,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		142625A32284F85B53B20A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Used Cars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5094A5B3AD6F41E7F1D155BC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Used Cars/Pods-Used Cars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Used Cars/Pods-Used Cars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Used Cars/Pods-Used Cars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C338096C29BE07A900BEC99C /* Sources */ = {
@@ -282,6 +383,7 @@
 		};
 		C338098529BE07AB00BEC99C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 619EBE30EBEF11AFC94C83CB /* Pods-Used Cars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,12 +391,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D4JY3DVDT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Used Cars/Info.plist";
+				INFOPLIST_FILE = "Used Cars/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +413,7 @@
 		};
 		C338098629BE07AB00BEC99C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2F1035F1306C5D8B9D949D0 /* Pods-Used Cars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,12 +421,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5D4JY3DVDT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Used Cars/Info.plist";
+				INFOPLIST_FILE = "Used Cars/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
