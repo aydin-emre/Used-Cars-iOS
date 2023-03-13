@@ -17,32 +17,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-CL-yOi">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="350" estimatedRowHeight="350" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-CL-yOi">
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="264" id="R2z-xu-jOS" customClass="CarTableViewCell" customModule="Used_Cars" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="264"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarTableViewCell" rowHeight="260" id="R2z-xu-jOS" customClass="CarTableViewCell" customModule="Used_Cars" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="260"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R2z-xu-jOS" id="zQh-zZ-kmw">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="264"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="260"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-PD-RfA" customClass="CarView" customModule="Used_Cars" customModuleProvider="target">
-                                                    <rect key="frame" x="20" y="11" width="353" height="242"/>
+                                                    <rect key="frame" x="20" y="11" width="353" height="238"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="250" id="wPU-8s-Kp4"/>
-                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="top" secondItem="zQh-zZ-kmw" secondAttribute="topMargin" id="0bN-r5-jDI"/>
-                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="leading" secondItem="zQh-zZ-kmw" secondAttribute="leadingMargin" id="1Xi-uD-eQt"/>
-                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="trailing" secondItem="zQh-zZ-kmw" secondAttribute="trailingMargin" id="Iq7-mQ-kEu"/>
-                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="bottom" secondItem="zQh-zZ-kmw" secondAttribute="bottomMargin" id="q6N-TG-mwi"/>
+                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="trailing" secondItem="zQh-zZ-kmw" secondAttribute="trailingMargin" id="1PG-sW-UFX"/>
+                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="top" secondItem="zQh-zZ-kmw" secondAttribute="topMargin" id="BcB-57-wQF"/>
+                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="leading" secondItem="zQh-zZ-kmw" secondAttribute="leadingMargin" id="LGE-Lg-0rk"/>
+                                                <constraint firstItem="CkQ-PD-RfA" firstAttribute="bottom" secondItem="zQh-zZ-kmw" secondAttribute="bottomMargin" id="MTd-gG-UVV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="1994" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="carView" destination="CkQ-PD-RfA" id="eA4-qj-Md2"/>
                                         </connections>

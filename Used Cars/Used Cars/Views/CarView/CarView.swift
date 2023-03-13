@@ -11,12 +11,20 @@ import Kingfisher
 final class CarView: UIView {
 
     @IBOutlet private var contentView: UIView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageSliderContainerView: UIView!
     @IBOutlet weak var imageScrollView: UIScrollView!
     @IBOutlet weak var imageCountContainerView: UIView!
     @IBOutlet weak var imageCountLabel: UILabel!
     @IBOutlet weak var imagePageControl: UIPageControl!
+    @IBOutlet weak var carModelLabel: UILabel!
+    @IBOutlet weak var locationContainerView: UIView!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var milesLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
 
-    private var images: [Image]!
+    private var images = [Image]()
     private let imageViewHeight: CGFloat = 223
     private var slideViewWidth: CGFloat!
 
@@ -52,8 +60,19 @@ final class CarView: UIView {
     func setView(with car: Car) {
         if let images = car.images {
             self.images = images
+            imageSliderContainerView.isHidden = false
+            imageView.isHidden = true
             createSlides()
+        } else {
+            imageSliderContainerView.isHidden = true
+            imageView.isHidden = false
         }
+        carModelLabel.text = "\(car.make ?? "") \(car.model ?? "")"
+        locationContainerView.isHidden = car.seller == nil
+        locationLabel.text = car.seller?.city
+        milesLabel.text = "\(car.mileage ?? 0) miles"
+        descriptionLabel.text = car.description
+        priceLabel.text = "$\(car.price ?? 0)"
     }
 
     private func createSlides() {
@@ -77,15 +96,6 @@ final class CarView: UIView {
                     .transition(.fade(1)),
                     .cacheOriginalImage
                 ])
-            {
-                result in
-                switch result {
-                case .success(let value):
-                    print("Task done for: \(value.source.url?.absoluteString ?? "")")
-                case .failure(let error):
-                    print("Job failed: \(error.localizedDescription)")
-                }
-            }
 
             slides.append(imageView)
         }
